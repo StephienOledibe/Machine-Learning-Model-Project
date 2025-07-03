@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My Machine Learning Model</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Hello! Welcome to the IMAGE TEMPLATE YAAY \(^0 ^)/
+  You're in the process of building something *amazing*
+  
+  Tips to get started:
+  1) Change the text on line 29 to a new title for your website!
+    (P.S. You can also change the tab title on line 6)
+
+  2) Paste a link to your model in the "script.js" file (you can find it in the menu on the left)
+
+  3) Press the Start! button in the Webview panel to see your model in action -(*o* )- . Note: It may take a few seconds to load.
+
+  Press the refresh button in the Webview to close the camera.
+
+  4) Add your own colors and styling in the "styles.css" file in the left menu!
+  
+  -->
+
+    <header>
+      <div class="logo">Steph</div>
+    </header>
+
+    <div class="bubble">
+      <h1>My Machine Learning Model - Real-Time Device Classifier</h1>
+      <p>
+        Welcome to my AI-powered image classifier! Once you click the
+        <strong>"Start"</strong> button, your camera will activate. Simply point
+        your phone or laptop camera at a device — like a smartphone or a
+        computer — and the model will try to recognize it. This is part of my
+        very first AI project, and I'm excited to share it with you!
+      </p>
+
+      <button type="button" onclick="init()" id="start">Start!</button>
+
+      <div id="webcam-container"></div>
+      <!-- Camera for testing data -->
+      <div id="label-container"></div>
+      <!-- Show the predicted label -->
+    </div>
+
+    <div class="bubble">
+      <div class="bubble-content">
+        <img src="steph.jpg" alt="Stephien Oledibe" class="bubble-image" />
+        <div class="bubble-text">
+          <h1>About the Creator</h1>
+          <p>
+            Hi! I am Stephien Oledibe, Steph for short. I am a Computer Science
+            major at Lincoln University of Pennsylvania with a growing passion
+            for technology. I am super excited to be working on my very first AI
+            project — a field I have been curious about for a long time. Big
+            thanks to Kode with Klossy for making this possible! Moving forward,
+            I hope to keep building my skills and see where this journey takes
+            me.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
